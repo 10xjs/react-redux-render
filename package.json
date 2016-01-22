@@ -8,7 +8,7 @@
     "lint": "eslint .",
     "prepublish": "npm run build",
     "spec": "NODE_ENV=test mocha --compilers js:babel-core/register -r adana-dump -R spec test/spec",
-    "test": "npm run lint && npm run spec"
+    "test": "npm run spec"
   },
   "author": "Neal Granger",
   "license": "CC0-1.0",
