@@ -1,0 +1,7 @@
+node_modules
+coverage
+action
+component
+*.log
+*.map
+/*.js
