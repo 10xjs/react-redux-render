@@ -38,5 +38,8 @@
     "redux-promise-wait": "^0.1.1",
     "sinon": "^1.17.2",
     "sinon-chai": "^2.8.0"
+  },
+  "dependencies": {
+    "htmlescape": "^1.1.0"
   }
 }
