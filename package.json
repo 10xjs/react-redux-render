@@ -2,6 +2,7 @@
   "name": "react-redux-render",
   "version": "0.1.0",
   "description": "",
+  "repository": "nealgranger/react-redux-render",
   "main": "index.js",
   "scripts": {
     "build": "babel -s inline -d . src/",
