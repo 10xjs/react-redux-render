@@ -1,5 +1,7 @@
 sudo: false
 language: node_js
+notifications:
+  email: false
 matrix:
   include:
     # Run tests in Node.js 0.12
