@@ -43,8 +43,9 @@ export const createRenderHandler = ({
   mapState = defaultMapState,
   mapAssets = defaultMapAssets,
   renderRoot,
+  wait,
 }) => (req, res, store) => {
-  const renderRootAsync = createWait(renderRoot, store);
+  const renderRootAsync = createWait(renderRoot, store, wait);
 
   const sendResponse = (markup) => {
     const state = store.getState();
@@ -96,6 +97,8 @@ export const createDefaultRenderRoot = (staticRender, rootComponent) =>
  * rendering `options.rootComponent`. Has no effect if `options.renderRoot` is
  * specified.
  *
+ * @param {Object=} options.wait Pass configuration into `reduxPromiseWait`.
+ *
  * @returns {Function} A http middleware function.
  */
 export default ({
@@ -105,6 +108,7 @@ export default ({
   mapState,
   mapAssets,
   staticRender = false,
+  wait = {},
 }) => {
   const request = (req, res, store) => store.dispatch(httpRequest(req));
   const error = (err, req, res, store) => store.dispatch(httpError(err, req));
@@ -120,6 +124,7 @@ export default ({
     renderRoot: (...args) => {
       return finalRenderRoot(...args);
     },
+    wait,
   });
 
   return renderMiddleware({
