@@ -25,11 +25,11 @@ export default function Page({
         <meta name='apple-mobile-web-app-capable' content='yes'/>
 
         <title>{title}</title>
-        {styles.map((style) => <Style {...style}/>)}
+        {styles.map((style, i) => <Style key={i} {...style}/>)}
       </head>
       <body data-path={path}>
         <div id='content' dangerouslySetInnerHTML={{ __html: markup }}/>
-        {scripts.map((script) => <Script {...script}/>)}
+        {scripts.map((script, i) => <Script key={i} {...script}/>)}
       </body>
     </html>
   );
