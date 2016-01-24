@@ -2,8 +2,8 @@
 
 HTTP middleware for rendering React Redux apps on the server.
 
-[![Build Status](https://img.shields.io/travis/nealgranger/react-redux-render.svg)](https://travis-ci.org/nealgranger/react-redux-render)
-[![Coverage Status](https://img.shields.io/coveralls/nealgranger/react-redux-render.svg)](https://coveralls.io/github/nealgranger/react-redux-render)
+[![Build Status](https://img.shields.io/travis/nealgranger/react-redux-render/master.svg)](https://travis-ci.org/nealgranger/react-redux-render)
+[![Coverage Status](https://img.shields.io/coveralls/nealgranger/react-redux-render/master.svg)](https://coveralls.io/github/nealgranger/react-redux-render)
 [![license](http://img.shields.io/npm/l/react-redux-render.svg?style=flat)](https://www.npmjs.com/package/react-redux-render)
 [![npm](https://img.shields.io/npm/v/react-redux-render.svg)](https://www.npmjs.com/package/react-redux-render)
 [![npm](https://img.shields.io/npm/dm/react-redux-render.svg)](https://www.npmjs.com/package/react-redux-render)
