@@ -17,7 +17,7 @@
     "http-middleware-metalab": "^0.2.3",
     "react": "~0.14.0",
     "react-dom": "~0.14.0",
-    "redux-promise-wait": "^0.1.1"
+    "redux-promise-wait": "^0.2.0"
   },
   "devDependencies": {
     "adana-cli": "^0.1.0",
@@ -36,7 +36,7 @@
     "mocha": "^2.3.3",
     "react": "~0.14.0",
     "react-dom": "~0.14.0",
-    "redux-promise-wait": "^0.1.1",
+    "redux-promise-wait": "^0.2.0",
     "sinon": "^1.17.2",
     "sinon-chai": "^2.8.0"
   },
